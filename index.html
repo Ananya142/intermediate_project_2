@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyToken DApp</title>
+</head>
+<body>
+    <h1>MyToken DApp</h1>
+    <p>Account: <span id="account"></span></p>
+    <p>Balance: <span id="balance"></span> MTK</p>
+
+    <h2>Transfer Tokens</h2>
+    <form id="transferForm">
+        <label for="toAddress">To Address:</label>
+        <input type="text" id="toAddress" required>
+        <br>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" required>
+        <br>
+        <button type="submit">Transfer</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
